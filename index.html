@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>输入框</title>
+	<style>
+		*{
+			font-size:36px;
+			line-height: 2em;
+		}
+	</style>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<form>
+		<input type="button" value="打开新窗口" onclick="openNewWindow()"/>
+		<input type="button" value="关闭新窗口" onclick="closeNewWindow()"/>
+	</form>
+</body>
+<script type="text/javascript">
+	var windowObj;
+	function openNewWindow(){
+		windowObj=window.open("newWindow.html","","width=500,height=300");
+	}
+
+	function closeNewWindow(){
+		windowObj.close();
+	}
+</script>
+</html>
